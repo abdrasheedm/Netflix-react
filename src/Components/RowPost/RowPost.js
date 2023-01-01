@@ -20,7 +20,6 @@ export default function RowPost(props) {
 
   useEffect(() => {
     axios.get(props.url).then((response) => {
-      // console.log(response.data)
       setMovie(response.data.results);
     });
   });
